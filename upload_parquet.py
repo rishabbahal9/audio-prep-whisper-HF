@@ -22,4 +22,4 @@ dataset = dataset.cast(features)
 print(dataset[0]["audio_filepath"])  # This will show the audio file details
 
 # Push the dataset to Hugging Face Dataset Hub
-dataset.push_to_hub("firstpost_dataset")
+dataset.push_to_hub("pancakes_audio_dataset")
