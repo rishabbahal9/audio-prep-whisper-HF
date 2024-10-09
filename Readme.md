@@ -33,7 +33,7 @@ command below. If you do so, make sure you change the value of **chunk_duration*
 as well.
 ```bash
 mkdir audio # create "audio" directory
-ffmpeg -i audio_16khz.wav -f segment -segment_time 30 -c copy audio/output_%03d.wav
+ffmpeg -i audio_16khz.wav -f segment -segment_time 10 -c copy audio/output_%03d.wav
 ```
 ### step 7: Prepare python environment
 ```bash
