@@ -1,0 +1,11 @@
+.venv
+.DS_Store
+.idea
+*/__pycache__
+*/.vscode
+
+audio
+
+video.mp4
+audio.wav
+audio_16khz.wav
