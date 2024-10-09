@@ -9,3 +9,5 @@ audio
 video.mp4
 audio.wav
 audio_16khz.wav
+data.json
+*/*.parquet
