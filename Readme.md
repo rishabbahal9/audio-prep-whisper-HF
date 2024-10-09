@@ -49,6 +49,11 @@ Login into hugging face. Generate token from https://huggingface.co/settings/tok
 ```bash
 huggingface-cli login
 ```
+You need to set openai api key in the environment variable. You can get the api key from 
+https://platform.openai.com/account/api-keys
+```bash
+export OPENAI_API_KEY=<your_openai_api_key>
+```
 
 ### Step 8: Transcribe the audio chunks, using whisper model
 Before running this command make sure you have correct value of **chunk_duration** in **transcribe_audio.py** file as 
