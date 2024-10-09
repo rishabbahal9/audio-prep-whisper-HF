@@ -4,6 +4,10 @@ import json
 from openai import OpenAI
 client = OpenAI()
 
+
+chunk_duration = 10.0
+
+
 # check if .wav file or not
 def is_wav_file(file_name):
     return file_name.lower().endswith('.wav')
@@ -40,7 +44,7 @@ for dirpath, dirnames, filenames in os.walk("audio"):
         if is_wav_file(filename):
             file_path = os.path.join(dirpath, filename)
             resp_text = transcribe_audio(file_path)
-            data.append({"audio": file_path, "text": resp_text, "audio_filepath": file_path, "duration": 10.0})
+            data.append({"audio": file_path, "text": resp_text, "audio_filepath": file_path, "duration": chunk_duration})
 
 print("Transcription completed.")
 # write data to a json file
